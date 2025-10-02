@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0557a3"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/gameOverText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentTop="true">
+
+        <!-- Shadow/Back Layer -->
+        <TextView
+            android:id="@+id/gameOverShadow"
+            android:text="GAME"
+            style="@style/HeaderShadow"/>
+
+        <!-- Main/Top Layer -->
+        <TextView
+            android:id="@+id/gameOverMain"
+            android:text="GAME"
+            style="@style/Header"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/over"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/gameOverText">
+
+        <!-- Shadow/Back Layer -->
+        <TextView
+            android:id="@+id/shad"
+            android:text="OVER"
+            style="@style/HeaderShadow"/>
+
+        <!-- Main/Top Layer -->
+        <TextView
+            android:id="@+id/word"
+            android:text="OVER"
+            style="@style/Header" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/results"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/over"
+        android:layout_marginTop="10dp">
+
+        <!-- Shadow/Back Layer -->
+        <TextView
+            android:id="@+id/shadresults"
+            android:text="Results:"
+            style="@style/textshadow"/>
+
+        <!-- Main/Top Layer -->
+        <TextView
+            android:id="@+id/resultsword"
+            android:text="Results:"
+            style="@style/text" />
+    </FrameLayout>
+
+
+    <EditText
+        android:id="@+id/resultsText"
+        android:layout_below="@id/results"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        />
+
+
+        <Button
+            android:id="@+id/playButton"
+            style="@style/buttons"
+            android:text="PLAY AGAIN"
+            android:layout_below="@id/resultsText"
+            android:layout_marginTop="110dp"/>
+
+        <Button
+            android:id="@+id/menuButton"
+            style="@style/buttons"
+            android:text="MENU"
+            android:layout_below="@id/playButton"
+            android:layout_marginTop="40dp"/>
+
+
+</RelativeLayout >

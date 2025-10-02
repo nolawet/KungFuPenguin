@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundBlue"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:id="@+id/writing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentTop="true">
+
+        <!-- Shadow/Back Layer -->
+        <TextView
+            android:id="@+id/gameOverShadow"
+            android:text="Instructions"
+            style="@style/HeaderShadow" />
+
+        <!-- Main/Top Layer -->
+        <TextView
+            android:id="@+id/gameOverMain"
+            android:text="Instructions"
+            style="@style/Header" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/inst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/writing"
+        android:layout_marginTop="10dp"
+        android:padding="4dp">
+
+        <!-- Shadow/Back Layer -->
+        <TextView
+            android:id="@+id/inst1"
+            android:text="  There are three elements, Fire, Water and Snow. Remember this sequence:"
+            style="@style/textshadow"
+            android:textSize="18dp"
+            android:layout_marginLeft = "3dp"
+            android:layout_marginTop = "3dp"
+           />
+
+        <!-- Main/Top Layer -->
+        <TextView
+            android:id="@+id/inst2"
+            android:text="  There are three elements, Fire, Water and Snow. Remember this sequence:"
+            style="@style/text"
+            android:textSize="18dp"
+            />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/centerImage"
+        android:layout_width="400dp"
+        android:layout_height="80dp"
+        android:src="@drawable/card2"
+        android:background="@color/background"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/inst"
+        android:layout_marginTop="20dp"/>
+
+    <FrameLayout
+        android:id="@+id/inst3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/centerImage"
+        android:layout_marginTop="5dp">
+
+        <!-- Shadow/Back Layer -->
+        <TextView
+            android:id="@+id/inst4"
+            android:text="Fire beats Snow, Water beats Fire, Snow beats Water"
+            style="@style/textshadow"
+            android:textSize="15dp"
+            android:layout_marginLeft = "2dp"
+            android:layout_marginTop = "2dp"
+            />
+
+        <!-- Main/Top Layer -->
+        <TextView
+            android:id="@+id/inst5"
+            android:text="Fire beats Snow, Water beats Fire, Snow beats Water"
+            style="@style/text"
+            android:textSize="15dp"
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/inst6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/inst3"
+        android:layout_marginTop="20dp"
+        android:padding="4dp">
+
+        <!-- Shadow/Back Layer -->
+        <TextView
+            android:id="@+id/inst7"
+            android:text="  During the game You will always have 5 cards in your hand. Each card will correspond to one of the 3 elements. Before each round you will have 30 seconds to select a card to use. If a card is not chosen the point will be forfeited. If your card beats your opponent you will the round. Whoever wins threes rounds first is the winner."
+            style="@style/textshadow"
+            android:textSize="18dp"
+            android:layout_marginLeft = "3dp"
+            android:layout_marginTop = "3dp"
+            />
+
+        <!-- Main/Top Layer -->
+        <TextView
+            android:id="@+id/inst8"
+            android:text="  During the game You will always have 5 cards in your hand. Each card will correspond to one of the 3 elements. Before each round you will have 30 seconds to select a card to use. If a card is not chosen the point will be forfeited. If your card beats your opponent you will the round. Whoever wins threes rounds first is the winner."
+            style="@style/text"
+            android:textSize="18dp"
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/inst9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/inst6"
+        android:layout_marginTop="15dp"
+        android:padding="4dp">
+
+        <!-- Shadow/Back Layer -->
+        <TextView
+            android:id="@+id/inst10"
+            android:text="  After winning a round you will earn a new belt. Once you recieve your black belt you can challenge Sensei to become the ultimate Kung Fu Penguin master."
+            style="@style/textshadow"
+            android:textSize="18dp"
+            android:layout_marginLeft = "3dp"
+            android:layout_marginTop = "3dp"
+            />
+
+        <!-- Main/Top Layer -->
+        <TextView
+            android:id="@+id/inst11"
+            android:text="  After winning a round you will earn a new belt. Once you recieve your black belt you can challenge Sensei to become the ultimate Kung Fu Penguin master."
+            style="@style/text"
+            android:textSize="18dp"
+            />
+    </FrameLayout>
+
+    <Button
+        style="@style/buttons"
+        android:id="@+id/back_Button"
+        android:text="Back"
+        android:layout_below="@id/inst9"
+        android:layout_marginTop="15dp"
+        />
+
+</RelativeLayout >

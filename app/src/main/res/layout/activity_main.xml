@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundBlue"
+    tools:context=".MainActivity">
+
+
+    <FrameLayout
+        android:id="@+id/kungFu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentTop="true">
+
+        <!-- Shadow/Back Layer -->
+        <TextView
+            android:id="@+id/gameOverShadow"
+            android:text="Kung Fu"
+            style="@style/HeaderShadow"/>
+
+        <!-- Main/Top Layer -->
+        <TextView
+            android:id="@+id/gameOverMain"
+            android:text="Kung Fu"
+            style="@style/Header" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/Penguin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/kungFu">
+
+        <!-- Shadow/Back Layer -->
+        <TextView
+            android:id="@+id/Penguinshad"
+            android:text="Penguin"
+            style="@style/HeaderShadow"/>
+
+        <!-- Main/Top Layer -->
+        <TextView
+            android:id="@+id/penword"
+            android:text="Penguin"
+            style="@style/Header" />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/Penguin"
+        android:layout_marginTop="40dp">
+
+        <!-- Shadow/Back Layer -->
+        <TextView
+            android:id="@+id/shad"
+            android:text="Customize Penguin Color"
+            style="@style/textshadow" />
+
+        <!-- Main/Top Layer -->
+        <TextView
+            android:id="@+id/colorhed"
+            android:text="Customize Penguin Color"
+            style="@style/text"/>
+    </FrameLayout>
+
+    <Spinner
+        android:id="@+id/Color_spinner"
+        android:layout_width="225dp"
+        android:layout_height="37dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/color"/>
+
+    <EditText
+        android:id="@+id/Enter_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:hint="Enter Name"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/Color_spinner"
+        />
+
+    <Button
+        android:id="@+id/setName"
+        style="@style/buttons"
+        android:layout_width="127dp"
+        android:layout_height="42dp"
+        android:text="Set Stats"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/Enter_Name"/>
+
+    <Button
+        android:id="@+id/Instructions"
+        style="@style/buttons"
+        android:text="How To Play"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Earn_Belts"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/Earn_Belts"
+        style="@style/buttons"
+        android:layout_height="wrap_content"
+        android:text="Earn your Belts"
+        android:layout_below="@id/setName"
+        android:layout_marginTop="40dp" />
+
+</RelativeLayout >

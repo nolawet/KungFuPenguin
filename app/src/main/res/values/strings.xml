@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Group Project</string>
+
+        <string-array name="colors_array">
+            <item>Blue</item>
+            <item>Green</item>
+            <item>Red</item>
+        </string-array>
+
+</resources>
+
